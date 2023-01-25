@@ -1,4 +1,4 @@
-//Revisão de operadores 
+//Revisão de operadores
 // a ordem dos operadores alteram o resultado
 
 // let a = 2;
@@ -159,7 +159,150 @@
 
 //Criar uma função que receba um nome como parâmetro e o exiba no console.log
 
-function oi2 (t3){
-console.log (`${t3}`)
+// function oi2 (t3){
+// console.log (`${t3}`)
+// }
+// oi2(`Cenoura`) 
+
+//FUNÇÃO COM PARÂMETRO 
+
+//ESTRUTURA BÁSICA DA FUNÇÃO COM PARÂMETRO É: 
+
+// function nomeDaFuncao(caixinhaReservadaParaUmFuturoValor){
+// console.log(caixinhaReservadaParaUmFuturoValor)
+// }
+// nomeDaFuncao("Aqui coloco o meu valor")
+
+//ex1
+// function nome (valor){
+// console.log(valor)
+// }
+// nome("Karynne")
+
+//ex2
+// function mostrarAnimais (animal1, animal2, animal3){
+//     console.log(animal1, animal2, animal3)
+// }
+// mostrarAnimais("macaco","papagaio","girafa")
+
+//ex3
+// function turma (naoSeiAinda){
+// console.log(`Olá, boa noite ${naoSeiAinda}`)
+// }
+// turma("t3")
+
+//Função com return
+//Estrutura básica de uma função com return
+
+// function nomeDaFuncao(amendoim){
+// return amendoim * 2
+// }
+// console.log(nomeDaFuncao(7))
+// //amendoim = 7
+
+//ex2
+
+// function comida (apelido){
+// return apelido + "arroz"
+// }
+// console.log(comida("Feijão"))
+
+//ex3
+
+// function misturado(numero, nome){
+//     return numero + nome 
+// }
+// console.log(misturado(30, "Brendon"))
+
+
+//UTILIZANDO VARIÁVEL DENTRO DE UM PARÂMETRO
+
+// let hortifruti = "Morango" //criei uma variável
+
+// function mostrarFruta(fruta){
+// console.log(`Eu sou a fruta: ${fruta}`)
+// }
+// mostrarFruta(hortifruti)
+
+
+
+//ex2
+
+//variável
+
+// let concessionaria = "Honda"
+// function mostrarConcessionaria(marca){
+// console.log(marca)
+// }
+// mostrarConcessionaria(concessionaria)
+
+
+//parâmetro
+
+// function mostrarConcessionaria(marca){
+//     console.log(marca)
+// }
+// mostrarConcessionaria("Fiat")
+
+
+//Switch: é uma estrutura condicional 
+
+//Estrutura básica do switch
+
+// switch(variável){
+// case condição:
+//     console.log(ação)
+//     break; //fechamento da condição
+//     default: //se não for, me mostra uma mensagem.
+//     console.log('caso seja false')
+// }
+
+// let roupa = "roupão"
+// switch (roupa) {
+//     case "camisa":
+//         console.log("Essa é uma bela camisa")
+//         break;
+//     default:
+//         console.log("Isso não é uma camisa")
+// }
+
+
+//Exemplo: Se a idade for 26 retorna que ou maior de idade; se for 17 retorna que sou menor de idade; Caso não seja nenhuma das duas retorne uma mensagem no default
+
+// let idade = 16;
+
+// switch (idade) {
+//     case 26:
+//         console.log("Você é maior de idade")
+//         break;
+//     case 17:
+//         console.log("Você é menor de idade")
+//         break;
+//         default: 
+//         console.log("Não foi possível verificar essas informações")
+// }
+
+//ex3
+
+let carro = "Chevette"
+
+switch (carro) {
+    case "uno":
+        console.log("Você é um uninho")
+        break;
+    case "gol":
+        console.log("Você não é pálio para o uninho")
+        break;
+    default:
+        console.log("Você não é pálio para o uninho")
 }
-oi2(`Cenoura`) 
+
+
+//Para testar
+
+/* Uma pessoa decidiu ir à uma revenda comprar um perfume. Ele deseja comprar um
+perfume amadeirado, e a revenda possui, além de perfumes amadeirados, florais,
+cítrico e frutal. Utilizando uma estrutura switch/case , caso o comprador queira o floral,
+retorne: “Compra efetuada com sucesso”. Nas outras opções, retorne: “Tem certeza
+que não prefere outro aroma?”. Caso seja especificado um aroma que não está
+disponível, retorne no console: “Não trabalhamos com este tipo de perfume aqui”. */
